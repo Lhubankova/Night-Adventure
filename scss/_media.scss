@@ -1,0 +1,304 @@
+@import "_libs";
+@import "_fonts";
+@import "_global";
+
+@media (max-width: 1400px) {
+  .about {
+    .feedbacks {
+      &-inner {
+        justify-content: space-around;
+
+        .feedback {
+          max-width: 450px;
+          padding: 60px;
+          margin: 0 15px 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .tabs {
+    &-controls {
+      margin-bottom: 50px;
+    }
+
+    &-item {
+      &-content {
+        .slider {
+          margin-right: 40px;
+          max-width: 400px;
+        }
+
+        .description {
+          max-width: 450px;
+        }
+      }
+    }
+  }
+
+  .about {
+    .team {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-info {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .about {
+    padding: 80px 50px;
+  }
+
+  .footer {
+    &-inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &-list {
+      margin: 30px 30px 0;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .tabs {
+    &-item {
+      &-content {
+        .slider {
+          display: block;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+
+        .description {
+          display: block;
+          max-width: 80%;
+          margin: 30px auto 0;
+
+          button {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 52px;
+    line-height: 70px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    padding: 10px 38px;
+
+    &::after {
+      width: 24px;
+      right: -12px;
+    }
+  }
+
+  .home {
+    &-inner {
+      padding: 45px 0 200px;
+    }
+
+    &-content {
+      h1 {
+        font-size: 80px;
+        line-height: 120px;
+      }
+
+      p {
+        max-width: 500px;
+      }
+    }
+  }
+
+  .tabs {
+    padding: 70px 0 100px;
+
+    &-title {
+      flex-direction: column;
+    }
+
+    &-controls {
+      font-size: 14px;
+    }
+  }
+
+  .about {
+    padding: 60px 40px;
+
+    .team {
+      &-info {
+        margin-right: 0;
+      }
+
+      &-members {
+        height: auto;
+        width: 400px;
+
+        &::after {
+          display: none;
+          right: 0;
+        }
+
+        .team-member {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 0 0 90px;
+
+    &-copyright {
+      margin: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 549px) {
+  .home {
+    .header {
+      .search {
+        display: none;
+      }
+    }
+
+    &-content {
+      h1 {
+        font-size: 60px;
+        line-height: 90px;
+      }
+
+      p {
+        max-width: 380px;
+      }
+    }
+  }
+
+  .tabs {
+    &-title {
+      margin-bottom: 50px;
+    }
+
+    &-controls {
+      flex-wrap: wrap;
+      margin: 0 auto 30px;
+
+      &::after {
+        display: none;
+      }
+
+      .line {
+        display: none;
+      }
+
+      li {
+        width: 40%;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #41EAD4;
+      }
+    }
+
+    &-item {
+      &-content {
+        .slider {
+          &-item {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .feedbacks {
+      &-inner {
+        .feedback {
+          padding: 70px 30px;
+
+          & > span {
+            &::before {
+              top: -40px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    &-list {
+      width: 80%;
+      margin: 30px 0 0;
+    }
+  }
+}
+
+@media (max-width: 419px) {
+  .home {
+    &-content {
+      h1 {
+        font-size: 55px;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .about {
+    padding: 70px 30px;
+
+    .team {
+      &-members {
+        width: 300px;
+
+        .team-member {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+
+    .feedbacks {
+      &-inner {
+        .feedback {
+          &-author {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+
+            img {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
